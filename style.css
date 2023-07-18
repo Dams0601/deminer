@@ -133,7 +133,15 @@ body {
     background: #d05858;
 }
 
-@media screen and (max-width: 800px){
+@media screen and (max-width: 899px){
+    body {
+        height: 1000px;
+    }
+
+    #top {
+        height: 70px;
+    }
+
     #top h2{
         font-size: x-large;
     }
@@ -157,6 +165,10 @@ body {
 }
 
 @media screen and (max-width: 560px){
+    body {
+        height: 1000px;
+    }
+
     #top h2{
         font-size: x-large;
     }
@@ -180,21 +192,26 @@ body {
 }
 
 @media screen and (max-width: 450px){
+    #top {
+        height: 10px;
+    }
+
     #top h2{
-        font-size: x-large;
+        font-size: 10px;
     }
     
     #top #chrono{
-        font-size: x-large;
+        font-size: 10px;
+
     }
     
     #top #drapeau{
-        font-size: x-large;
+        font-size: 10px;
     }
     
     .colonne {
-        width: 19px;
-        height: 19px;
+        width: 21px;
+        height: 21px;
     }
     
     .colonne span{
