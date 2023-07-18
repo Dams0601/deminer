@@ -1,0 +1,203 @@
+* {
+    margin: 0;
+    box-sizing: border-box;
+} 
+
+body {
+    background: #454545;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+
+#center{
+    border: 3px solid black;
+}
+
+#top {
+    height: 100px;
+    color: aliceblue;
+
+    border-bottom: 3px solid black;
+    background-color: #0d8100;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: centerr;
+    width: 100%;
+}
+
+#top h2{
+    width: 50%;
+    text-align: center;
+    font-size: xx-large;
+}
+
+#top #chrono{
+    width: 25%;
+    text-align: center;
+    font-size: xx-large;
+}
+
+#top #drapeau{
+    text-align: center;
+    font-size: xx-large;
+    padding: 5px 10px;
+
+}
+
+.ligne{
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+}
+
+.colonne {
+    width: 38px;
+    height: 38px;
+}
+
+.colonne span{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    font-size: 30px;
+
+}
+
+.vertClair {
+    background: #a6d24f;
+}
+
+.vertFonce {
+    background: #91bc41;
+}
+
+.vertClair:hover, .vertFonce:hover {
+    background: #a9ff89;
+}
+
+.bombe {
+    background: red;
+}
+
+.decouvert.vertClair {
+    background: #e5c29f;
+}
+.decouvert.vertFonce {
+    background: #c8ab8e;
+}
+
+.invisible {
+    visibility: hidden;
+}
+
+.visible{
+    visibility: visible;
+}
+
+#score {
+    display: none;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+}
+
+#score h2 {
+    color: aliceblue;
+    margin-bottom: 50px;
+}
+
+#score button {
+    padding: 10px 20px 10px 20px;
+    border: none;
+    border-radius: 10px;
+    background: #149f14;
+    color: aliceblue;
+    font-size: xx-large;
+}
+
+.red {
+    background: #c54949;
+}
+
+.pointer {
+    background: #c54949;
+}
+
+.pointer:hover{
+    background: #d05858;
+}
+
+@media screen and (max-width: 800px){
+    #top h2{
+        font-size: x-large;
+    }
+    
+    #top #chrono{
+        font-size: x-large;
+    }
+    
+    #top #drapeau{
+        font-size: x-large;
+    }
+    
+    .colonne {
+        width: 28px;
+        height: 28px;
+    }
+    
+    .colonne span{
+        font-size: 20px;
+    }
+}
+
+@media screen and (max-width: 560px){
+    #top h2{
+        font-size: x-large;
+    }
+    
+    #top #chrono{
+        font-size: x-large;
+    }
+    
+    #top #drapeau{
+        font-size: x-large;
+    }
+    
+    .colonne {
+        width: 23px;
+        height: 23px;
+    }
+    
+    .colonne span{
+        font-size: 18px;
+    }
+}
+
+@media screen and (max-width: 450px){
+    #top h2{
+        font-size: x-large;
+    }
+    
+    #top #chrono{
+        font-size: x-large;
+    }
+    
+    #top #drapeau{
+        font-size: x-large;
+    }
+    
+    .colonne {
+        width: 21px;
+        height: 21px;
+    }
+    
+    .colonne span{
+        font-size: 15px;
+    }
+}
